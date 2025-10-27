@@ -4,11 +4,13 @@ on:
     push:
       branches:
         -main
+     workflow_dispatch:
+     
 jobs:
-    first_job:
-      name: My first job
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo "Hello Howard from ${{github.event}}"
+  first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "Hello Howard from ${{github.event}}"
       
     
