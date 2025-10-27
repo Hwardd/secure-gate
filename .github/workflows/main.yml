@@ -1,0 +1,14 @@
+#this is my first github actions workflow
+name: First workflow
+on:
+    push:
+      branches:
+        -main
+jobs:
+    first_job:
+      name: My first job
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "Hello Howard from ${{github.event}}"
+      
+    
